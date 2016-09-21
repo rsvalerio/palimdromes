@@ -1,0 +1,22 @@
+# This file is part of palindromes.
+# https://github.com/someuser/somepackage
+
+# Licensed under the MIT license:
+# http://www.opensource.org/licenses/MIT-license
+# Copyright (c) 2016, Rodrigo Valerio <rsvalerio@gmail.com>
+
+[run]
+omit =
+    *tests.py
+branch = True
+source =
+    palindromes
+
+[report]
+exclude_lines =
+    pragma: no cover
+    def __repr__
+    raise NotImplementedError
+    if __name__ == .__main__.:
+    from urllib.parse import parse_qs
+    except ImportError:
